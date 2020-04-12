@@ -1,0 +1,40 @@
+input[type="text"] {
+  max-width: 100%;
+}
+
+#edit-created-from,
+#edit-created-to,
+#edit-user-created-from,
+#edit-user-created-to,
+#edit-content-created-from,
+#edit-content-created-to {
+  width: 150px;
+}
+
+.node-form {
+  .field--name-title input {
+    font-size: 1.4em;
+    width: 100%;
+  }
+}
+
+body.path-admin .panel.dashboard-block {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #222330;
+  border: 1px solid rgba(216, 217, 224, 0.8);
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.block-views-blockvarbase-google-analytics-summary-sessions-and-pageviews {
+  .panel__title {
+    display: block;
+  }
+
+ .description {
+    padding: 20px;
+  }
+}
