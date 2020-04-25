@@ -44,8 +44,7 @@ class VarthemeClaroTests extends BrowserTestBase {
 
     $this->drupalLogin($this->rootUser);
 
-    $theme_handler = \Drupal::service('theme_handler');
-    $theme_handler->install(['vartheme_claro']);
+    \Drupal::service('theme_installer')->install(['vartheme_claro']);
 
     \Drupal::configFactory()
       ->getEditable('system.theme')
