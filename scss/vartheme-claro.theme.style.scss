@@ -12,9 +12,16 @@ input[type="text"] {
 }
 
 .node-form {
-  .field--name-title input {
-    font-size: 1.4em;
-    width: 100%;
+  .field--name-title {
+    input {
+      font-size: 1.6em;
+      width: 100%;
+      min-height: 4rem;
+    }
+
+    .length-indicator {
+      margin-top: -1.5rem;
+    }
   }
 }
 
