@@ -18,7 +18,7 @@ input[type="text"] {
 }
 
 .node-form .field--name-title .length-indicator {
-  margin-top: -1.5rem;
+  margin-top: -1rem;
 }
 
 body.path-admin .panel.dashboard-block {
