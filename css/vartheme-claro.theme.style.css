@@ -184,3 +184,7 @@ body.path-admin .panel.dashboard-block {
   -webkit-box-shadow: 0 0 0 2px #fff, 0 0 0 5px #26a769;
   box-shadow: 0 0 0 2px #fff, 0 0 0 5px #26a769;
 }
+
+.field--name-field-media-cover-image .focal-point-preview-link {
+  padding: 1.2rem;
+}

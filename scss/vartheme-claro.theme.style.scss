@@ -165,7 +165,8 @@ body.path-admin .panel.dashboard-block {
     right: 40px;
   }
 
-  .media-library-edit__link, .media-library-item__remove.button:first-child {
+  .media-library-edit__link,
+  .media-library-item__remove.button:first-child {
     width: 25px;
     height: 25px;
     top: 10px;
@@ -186,5 +187,11 @@ body.path-admin .panel.dashboard-block {
       outline: 2px dotted transparent;
       box-shadow: 0 0 0 2px #fff, 0 0 0 5px #26a769;
     }
+  }
+}
+
+.field--name-field-media-cover-image {
+  .focal-point-preview-link {
+    padding: 1.2rem;
   }
 }
