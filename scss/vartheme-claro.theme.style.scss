@@ -190,7 +190,18 @@ body.path-admin .panel.dashboard-block {
   }
 }
 
+// Style Focal point of Focal point "Preview" link cover image for a Video.
 .focal-point-preview-link {
   padding: 1.2rem;
   text-decoration: none;
+}
+
+// Style media library grid item in the node secondary region layout.
+.layout-region-node-secondary {
+  .media-library-item {
+    &.media-library-item--grid {
+      width: 200px;
+      max-width: 200px;
+    }
+  }
 }
