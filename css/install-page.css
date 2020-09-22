@@ -1,19 +1,15 @@
 body.install-page {
-  background-image: url("../images/varbase-bg.jpg");
-  background-position-x: center !important;
-  background-position-y: center !important;
-  -webkit-background-size: cover !important;
-  background-size: cover !important;
-  background-repeat-x: no-repeat !important;
-  background-repeat-y: no-repeat !important;
-  background-attachment: fixed !important;
-  -webkit-background-origin: initial !important;
-  background-origin: initial !important;
-  -webkit-background-clip: initial !important;
-  background-clip: initial !important;
-  background-color: initial !important;
   -o-object-fit: cover;
   object-fit: cover;
+  background-color: initial !important;
+  background-image: url("../images/varbase-bg.jpg");
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-position-x: center !important;
+  background-position-y: center !important;
+  background-clip: initial !important;
+  background-origin: initial !important;
+  background-size: cover !important;
 }
 
 body.install-page .other-lang-warn {
@@ -25,34 +21,31 @@ body.install-page .other-lang-warn .visible {
 }
 
 body.install-page .logo a {
+  background-color: transparent;
   background-image: url("../images/vardot-white-logo.png");
-  background-position-x: 0px;
-  background-position-y: 0px;
-  -webkit-background-size: 100% 100%;
-  background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: initial;
-  -webkit-background-origin: initial;
-  background-origin: initial;
-  -webkit-background-clip: initial;
+  background-position-x: 0;
+  background-position-y: 0;
   background-clip: initial;
-  background-color: transparent;
+  background-origin: initial;
+  background-size: 100%;
 }
 
 body.install-page .site-version {
-  vertical-align: initial !important;
   padding-left: 10px;
+  vertical-align: initial !important;
   color: #4192c8;
-  font-weight: bold;
   font-size: 0.6em;
+  font-weight: bold;
 }
 
 footer.installer-footer {
-  margin: 0 auto;
   width: 75%;
   max-width: 770px;
-  border-radius: 5px;
+  margin: 0 auto;
   color: white;
+  border-radius: 5px;
 }
 
 footer.installer-footer #credit {
@@ -62,18 +55,18 @@ footer.installer-footer #credit {
 }
 
 footer.installer-footer #credit a {
-  clear: right;
   float: right;
-  height: 0;
+  clear: right;
   overflow: hidden;
-  padding: 50px 0 0;
   width: 125px;
+  height: 0;
+  padding: 50px 0 0;
 }
 
 [dir="rtl"] footer.installer-footer #credit {
   float: left;
-  text-align: left;
   padding: 20px 0 40px;
+  text-align: left;
   font-size: 11px;
 }
 

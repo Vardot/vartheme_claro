@@ -1,11 +1,10 @@
 # Ignore node modules
 node_modules
 /*/node_modules
-/*/modules/vbp_text_and_image/node_modules
 
 # Ignore Variables
 /css/variables.css
-/*/modules/vbp_text_and_image/css/variables.css
+/css/mixins/
 
 # Ignore vim swp files and gedit temp files
 *.swp

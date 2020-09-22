@@ -17,9 +17,9 @@ input[type="text"] {
 }
 
 .node-form .field--name-title input {
-  font-size: 1.6em;
   width: 100%;
   min-height: 4rem;
+  font-size: 1.6em;
 }
 
 .node-form .field--name-title .length-indicator {
@@ -34,7 +34,6 @@ body.path-admin .panel.dashboard-block {
   border: 1px solid rgba(216, 217, 224, 0.8);
   border-radius: 2px;
   background-color: #fff;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -49,12 +48,11 @@ body.path-admin .panel.dashboard-block {
 .node-form div.autocomplete-deluxe-container {
   width: 65%;
   padding: 0.68rem 1.875rem 0.68rem 0.93rem;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  background: #ffffff;
-  border: 1px solid #8e929c;
   color: #222330;
+  border: 1px solid #8e929c;
   border-radius: 0.125rem;
+  background: #fff;
+  box-shadow: none;
 }
 
 @media screen and (max-width: 81.25rem) {
@@ -69,9 +67,9 @@ body.path-admin .panel.dashboard-block {
 
 .node-form div.autocomplete-deluxe-container:not(.autocomplete-deluxe-multiple) input.autocomplete-deluxe-form {
   width: 100%;
-  background: white;
   min-height: 3rem;
   padding: 0.68rem 1.875rem 0.68rem 0.93rem;
+  background: white;
 }
 
 .node-form div.autocomplete-deluxe-container:not(.autocomplete-deluxe-multiple) .autocomplete-deluxe-throbber {
@@ -84,16 +82,16 @@ body.path-admin .panel.dashboard-block {
 
 .node-form div.autocomplete-deluxe-container input.autocomplete-deluxe-form {
   min-height: 1.25rem;
-  padding-bottom: 0;
   padding-top: 0;
+  padding-bottom: 0;
 }
 
 .node-form div.autocomplete-deluxe-container div.autocomplete-deluxe-throbber {
+  position: absolute;
+  top: 0.875rem;
+  right: 0.625rem;
   width: 1.875rem;
   height: 100%;
-  position: absolute;
-  right: 0.625rem;
-  top: 0.875rem;
 }
 
 .node-form div.autocomplete-deluxe-container div.autocomplete-deluxe-throbber.autocomplete-deluxe-open {
@@ -155,18 +153,16 @@ body.path-admin .panel.dashboard-block {
 
 .media-library-item .media-library-edit__link,
 .media-library-item .media-library-item__remove.button:first-child {
+  top: 10px;
   width: 25px;
   height: 25px;
-  top: 10px;
-  -webkit-background-size: 13px 13px;
-  background-size: 13px;
   border: 2px solid #ccc !important;
+  background-size: 13px;
   font-size: 0;
 }
 
 .media-library-item .media-library-edit__link:not(:focus),
 .media-library-item .media-library-item__remove.button:first-child:not(:focus) {
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -174,14 +170,13 @@ body.path-admin .panel.dashboard-block {
 .media-library-item .media-library-edit__link:focus,
 .media-library-item .media-library-item__remove.button:first-child:hover,
 .media-library-item .media-library-item__remove.button:first-child:focus {
-  border-color: #40b6ff !important;
   color: transparent;
+  border-color: #40b6ff !important;
 }
 
 .media-library-item .media-library-edit__link:active,
 .media-library-item .media-library-item__remove.button:first-child:active {
   outline: 2px dotted transparent;
-  -webkit-box-shadow: 0 0 0 2px #fff, 0 0 0 5px #26a769;
   box-shadow: 0 0 0 2px #fff, 0 0 0 5px #26a769;
 }
 
