@@ -1,4 +1,7 @@
 node_modules/**/*.css
+vendor/**/*.css
+**/*.min.css"
+node_modules/**/*.css
 scss/*
 images/*
 fonts/*
