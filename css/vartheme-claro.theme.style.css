@@ -189,3 +189,7 @@ body.path-admin .panel.dashboard-block {
   width: 200px;
   max-width: 200px;
 }
+
+fieldset.fieldset {
+  border-color: #d8d9e0;
+}

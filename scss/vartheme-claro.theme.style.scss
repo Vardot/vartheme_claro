@@ -205,3 +205,9 @@ body.path-admin .panel.dashboard-block {
     }
   }
 }
+
+fieldset {
+  &.fieldset {
+    border-color: rgb(216, 217, 224);
+  }
+}
