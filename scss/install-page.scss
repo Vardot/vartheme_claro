@@ -40,6 +40,25 @@ body.install-page {
   }
 }
 
+@media screen and (min-width: 38em) {
+  .layout-sidebar-first {
+    width: 35%;
+    float: left;
+  }
+  [dir=rtl] .layout-sidebar-first {
+    float: right;
+  }
+
+  main {
+    width: 60%;
+    float: right;
+  }
+
+  [dir=rtl] main {
+    float: left;
+  }
+}
+
 footer {
   &.installer-footer {
     margin: 0 auto;

@@ -40,6 +40,23 @@ body.install-page .site-version {
   font-weight: bold;
 }
 
+@media screen and (min-width: 38em) {
+  .layout-sidebar-first {
+    float: left;
+    width: 35%;
+  }
+  [dir=rtl] .layout-sidebar-first {
+    float: right;
+  }
+  main {
+    float: right;
+    width: 60%;
+  }
+  [dir=rtl] main {
+    float: left;
+  }
+}
+
 footer.installer-footer {
   width: 75%;
   max-width: 770px;
