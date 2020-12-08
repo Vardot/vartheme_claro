@@ -193,3 +193,18 @@ body.path-admin .panel.dashboard-block {
 fieldset.fieldset {
   border-color: #d8d9e0;
 }
+
+@media screen and (min-width: 61rem) {
+  .layout-region--node-main {
+    width: 65%;
+  }
+  .layout-region--node-main .layout-region__content {
+    max-width: 100%;
+  }
+  .layout-region--node-footer .layout-region__content {
+    max-width: 100%;
+  }
+  .layout-region--node-secondary {
+    width: 35%;
+  }
+}
