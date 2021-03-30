@@ -208,3 +208,10 @@ fieldset.fieldset {
     width: 35%;
   }
 }
+
+@media screen and (max-width: 37.5rem) {
+  td > .form-item > .form-element,
+  td > .ajax-new-content > .form-item > .form-element {
+    width: inherit;
+  }
+}

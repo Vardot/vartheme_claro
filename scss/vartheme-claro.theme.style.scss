@@ -231,3 +231,11 @@ fieldset {
     width: 35%;
   }
 }
+
+// Fix styling of form elements in tables on mobile.
+td > .form-item > .form-element,
+td > .ajax-new-content > .form-item > .form-element {
+  @media screen and (max-width: 37.5rem) {
+    width: inherit;
+  }
+}
