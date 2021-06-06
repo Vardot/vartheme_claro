@@ -53,59 +53,16 @@ body.path-admin .panel.dashboard-block {
 .node-form {
   div.autocomplete-deluxe-container {
     width: 65%;
-    padding: 0.68rem 1.875rem 0.68rem 0.93rem;
-    box-shadow: none;
-    background: #ffffff;
-    border: 1px solid #8e929c;
-    color: #222330;
-    border-radius: 0.125rem;
 
     @media screen and (max-width: 81.25rem){
       width: 100%;
     }
 
     &:not(.autocomplete-deluxe-multiple) {
-      padding: 0;
-
       input {
         &.autocomplete-deluxe-form {
           width: 100%;
-          background: white;
-          min-height: 3rem;
-          padding: 0.68rem 1.875rem 0.68rem 0.93rem;
         }
-      }
-
-      .autocomplete-deluxe-throbber {
-        top: 0.93rem;
-      }
-    }
-
-    .autocomplete-deluxe-item {
-      margin: 0 0.31rem 0.18rem 0;
-    }
-
-    input {
-      &.autocomplete-deluxe-form {
-        min-height: 1.25rem;
-        padding-bottom: 0;
-        padding-top: 0;
-      }
-    }
-
-    div.autocomplete-deluxe-throbber {
-      width: 1.875rem;
-      height: 100%;
-      position: absolute;
-      right: 0.625rem;
-      top: 0.875rem;
-
-      &.autocomplete-deluxe-open {
-        background: url('../images/search-autocompleting.svg') no-repeat;
-      }
-
-      &.autocomplete-deluxe-closed {
-        background: url('../images/search-autocomplete.svg') no-repeat;
       }
     }
   }
