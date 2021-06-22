@@ -46,10 +46,6 @@ libraries-override:
       component:
         /core/themes/stable/css/core/dropbutton/dropbutton.css: /core/themes/claro/css/components/dropbutton.css
 
-  core/drupal.tabledrag:
-    js:
-      misc/tabledrag.js: /core/themes/claro/js/tabledrag.js
-
   core/drupal.vertical-tabs:
     css:
       component:
@@ -132,12 +128,15 @@ libraries-override:
 libraries-extend:
   ckeditor/drupal.ckeditor:
     - claro/ckeditor-editor
+  ckeditor/drupal.ckeditor.admin:
+    - claro/ckeditor-admin
   core/ckeditor:
     - claro/ckeditor-dialog
   core/drupal.collapse:
     - claro/details-focus
   core/drupal.dialog:
     - claro/claro.drupal.dialog
+    - claro/claro.jquery.ui
   core/drupal.dropbutton:
     - claro/dropbutton
   core/drupal.checkbox:
@@ -146,32 +145,41 @@ libraries-extend:
     - claro/messages
   core/drupal.progress:
     - claro/progress
+  core/drupal.tabbingmanager:
+    - claro/claro.jquery.ui
+  core/drupal.tabledrag:
+    - claro/claro.tabledrag
   core/drupal.vertical-tabs:
     - claro/vertical-tabs
-  core/jquery.ui:
-    - claro/claro.jquery.ui
   file/drupal.file:
     - claro/file
+  filter/drupal.filter.admin:
+    - claro/filter
+  filter/drupal.filter:
+    - claro/filter
   system/admin:
     - claro/system.admin
   core/drupal.autocomplete:
     - claro/autocomplete
+    - claro/claro.jquery.ui
   tour/tour-styling:
     - claro/tour-styling
   shortcut/drupal.shortcut:
     - claro/drupal.shortcut
   core/drupal.ajax:
     - claro/ajax
+  user/drupal.user:
+    - claro/form.password-confirm
   views/views.module:
     - claro/views
   media/media_embed_ckeditor_theme:
     - claro/classy.media_embed_ckeditor_theme
+  media_library/ui:
+    - claro/media_library.ui
   media_library/view:
     - claro/media_library.theme
   media_library/widget:
     - claro/media_library.theme
-  user/drupal.user:
-    - claro/form.password-confirm
 
 quickedit_stylesheets:
   - ../../../core/themes/claro/css/components/quickedit.css
