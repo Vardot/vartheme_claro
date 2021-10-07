@@ -36,7 +36,7 @@ build:
         halt-on-fail: false
     testing:
       run_tests.javascript:
-        types: 'PHPUnit-Functional'
-        testgroups: 'vartheme_claro'
+        types: 'PHPUnit-FunctionalJavascript'
+        testgroups: vartheme_claro
         suppress-deprecations: true
         halt-on-fail: false
