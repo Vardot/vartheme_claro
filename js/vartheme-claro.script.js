@@ -3,10 +3,10 @@
  * Behaviors for the Vartheme Claro theme.
  */
 
-(function($, _, Drupal, drupalSettings) {
+(function ($, _, Drupal) {
   Drupal.behaviors.varthemeClaro = {
-    attach: function(context) {
+    attach: function () {
       // Vartheme Claro admin JavaScript behaviors goes here.
     }
   };
-})(window.jQuery, window._, window.Drupal, window.drupalSettings);
+})(window.jQuery, window._, window.Drupal);

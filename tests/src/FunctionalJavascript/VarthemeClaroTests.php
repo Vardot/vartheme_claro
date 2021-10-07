@@ -1,8 +1,8 @@
 <?php
 
-namespace Drupal\Tests\vartheme_claro\Functional;
+namespace Drupal\Tests\vartheme_claro\FunctionalJavascript;
 
-use Drupal\Tests\BrowserTestBase;
+use Drupal\FunctionalJavascriptTests\WebDriverTestBase;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
 use Drupal\language\Entity\ConfigurableLanguage;
 use Drupal\Core\Cache\Cache;
@@ -12,14 +12,19 @@ use Drupal\Core\Cache\Cache;
  *
  * @group vartheme_claro
  */
-class VarthemeClaroTests extends BrowserTestBase {
+class VarthemeClaroTests extends WebDriverTestBase {
 
   use StringTranslationTrait;
 
   /**
    * {@inheritdoc}
    */
-  protected $defaultTheme = 'bartik';
+  protected $profile = 'standard';
+
+  /**
+   * {@inheritdoc}
+   */
+  protected $defaultTheme = 'olivero';
 
   /**
    * {@inheritdoc}
@@ -30,10 +35,7 @@ class VarthemeClaroTests extends BrowserTestBase {
     'config_translation',
     'content_translation',
     'locale',
-    'node',
-    'system',
-    'user',
-    'block',
+    'autocomplete_deluxe',
   ];
 
   /**
@@ -44,12 +46,13 @@ class VarthemeClaroTests extends BrowserTestBase {
 
     $this->drupalLogin($this->rootUser);
 
-    \Drupal::service('theme_installer')->install(['vartheme_claro']);
+    // Insall the Claro admin theme.
+    $this->container->get('theme_installer')->install(['vartheme_claro']);
 
-    \Drupal::configFactory()
-      ->getEditable('system.theme')
-      ->set('admin', 'vartheme_claro')
-      ->save();
+    // Set the Claro theme as the default admin theme.
+    $this->config('system.theme')->set('admin', 'vartheme_claro')->save();
+
+    drupal_flush_all_caches();
 
     ConfigurableLanguage::createFromLangcode('ar')->save();
     Cache::invalidateTags(['rendered', 'locale']);

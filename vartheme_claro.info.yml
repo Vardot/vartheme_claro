@@ -1,20 +1,20 @@
-name: 'Vartheme Claro'
+name: "Vartheme Claro"
 type: theme
 base theme: claro
-description: 'A modern administration theme for Varbase standard websites. Based on the Claro Drupal core admin theme.'
-alt text: 'Screenshot of Vartheme Claro, Varbase administration theme.'
+description: "A modern administration theme for Varbase standard websites. Based on the Claro Drupal core admin theme."
+alt text: "Screenshot of Vartheme Claro, Varbase administration theme."
 core_version_requirement: ^9
-package: 'Varbase'
+package: "Varbase"
 regions:
-  header: 'Header'
-  pre_content: 'Pre-content'
+  header: "Header"
+  pre_content: "Pre-content"
   breadcrumb: Breadcrumb
   highlighted: Highlighted
   help: Help
   content: Content
-  page_top: 'Page top'
-  page_bottom: 'Page bottom'
-  sidebar_first: 'First sidebar'
+  page_top: "Page top"
+  page_bottom: "Page bottom"
+  sidebar_first: "First sidebar"
 regions_hidden:
   - sidebar_first
 libraries:
