@@ -7,17 +7,18 @@ input[type="text"] {
 }
 
 .views-exposed-form__item {
-  #edit-created-from,
-  #edit-created-to,
-  #edit-user-created-from,
-  #edit-user-created-to,
-  #edit-content-created-from,
-  #edit-content-created-to {
+
+  [id*="edit-created-from"],
+  [id*="edit-created-to"],
+  [id*="edit-user-created-from"],
+  [id*="edit-user-created-to"],
+  [id*="edit-content-created-from"],
+  [id*="edit-content-created-to"] {
     width: 9rem;
   }
 
-  #edit-langcode,
-  #edit-uid {
+  [id*="edit-langcode"],
+  [id*="edit-uid"] {
     width: 12rem;
   }
 
