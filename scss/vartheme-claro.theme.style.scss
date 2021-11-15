@@ -6,13 +6,23 @@ input[type="text"] {
   max-width: 100%;
 }
 
-#edit-created-from,
-#edit-created-to,
-#edit-user-created-from,
-#edit-user-created-to,
-#edit-content-created-from,
-#edit-content-created-to {
-  width: 150px;
+.views-exposed-form__item {
+  #edit-created-from,
+  #edit-created-to,
+  #edit-user-created-from,
+  #edit-user-created-to,
+  #edit-content-created-from,
+  #edit-content-created-to {
+    width: 9.5rem;
+  }
+
+  #edit-langcode {
+    width: 12rem;
+  }
+
+  #edit-uid {
+    width: 15rem;
+  }
 }
 
 .node-form {

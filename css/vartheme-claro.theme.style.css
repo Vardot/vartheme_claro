@@ -7,13 +7,21 @@ input[type="text"] {
   max-width: 100%;
 }
 
-#edit-created-from,
-#edit-created-to,
-#edit-user-created-from,
-#edit-user-created-to,
-#edit-content-created-from,
-#edit-content-created-to {
-  width: 150px;
+.views-exposed-form__item #edit-created-from,
+.views-exposed-form__item #edit-created-to,
+.views-exposed-form__item #edit-user-created-from,
+.views-exposed-form__item #edit-user-created-to,
+.views-exposed-form__item #edit-content-created-from,
+.views-exposed-form__item #edit-content-created-to {
+  width: 9.5rem;
+}
+
+.views-exposed-form__item #edit-langcode {
+  width: 12rem;
+}
+
+.views-exposed-form__item #edit-uid {
+  width: 15rem;
 }
 
 .node-form .field--name-title input {
