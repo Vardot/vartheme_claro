@@ -13,16 +13,14 @@ input[type="text"] {
   #edit-user-created-to,
   #edit-content-created-from,
   #edit-content-created-to {
-    width: 9.5rem;
+    width: 9rem;
   }
 
-  #edit-langcode {
+  #edit-langcode,
+  #edit-uid {
     width: 12rem;
   }
 
-  #edit-uid {
-    width: 15rem;
-  }
 }
 
 .node-form {

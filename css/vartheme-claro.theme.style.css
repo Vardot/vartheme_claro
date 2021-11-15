@@ -13,15 +13,12 @@ input[type="text"] {
 .views-exposed-form__item #edit-user-created-to,
 .views-exposed-form__item #edit-content-created-from,
 .views-exposed-form__item #edit-content-created-to {
-  width: 9.5rem;
+  width: 9rem;
 }
 
-.views-exposed-form__item #edit-langcode {
-  width: 12rem;
-}
-
+.views-exposed-form__item #edit-langcode,
 .views-exposed-form__item #edit-uid {
-  width: 15rem;
+  width: 12rem;
 }
 
 .node-form .field--name-title input {
