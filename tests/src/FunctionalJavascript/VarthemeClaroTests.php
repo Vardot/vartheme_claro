@@ -34,8 +34,7 @@ class VarthemeClaroTests extends WebDriverTestBase {
     'language',
     'config_translation',
     'content_translation',
-    'locale',
-    'autocomplete_deluxe',
+    'locale'
   ];
 
   /**

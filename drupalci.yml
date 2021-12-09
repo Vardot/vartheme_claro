@@ -20,7 +20,6 @@ build:
           - composer require phpunit/phpunit:~9.0 --with-all-dependencies
           - composer require drupal/core-dev:~9.0
           - composer require drupal/varbase_core:9.0.x-dev
-          - composer require drupal/autocomplete_deluxe:2.0.x-dev
           - cat composer.json
       phplint: {  }
       csslint:
