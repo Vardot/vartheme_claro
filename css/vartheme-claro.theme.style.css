@@ -3,21 +3,20 @@ html {
   /* Make the elements smaller for Varbase admin */
 }
 
-input[type="text"] {
+input[type=text] {
   max-width: 100%;
 }
 
-.views-exposed-form__item [id*="edit-created-from"],
-.views-exposed-form__item [id*="edit-created-to"],
-.views-exposed-form__item [id*="edit-user-created-from"],
-.views-exposed-form__item [id*="edit-user-created-to"],
-.views-exposed-form__item [id*="edit-content-created-from"],
-.views-exposed-form__item [id*="edit-content-created-to"] {
+.views-exposed-form__item [id*=edit-created-from],
+.views-exposed-form__item [id*=edit-created-to],
+.views-exposed-form__item [id*=edit-user-created-from],
+.views-exposed-form__item [id*=edit-user-created-to],
+.views-exposed-form__item [id*=edit-content-created-from],
+.views-exposed-form__item [id*=edit-content-created-to] {
   width: 9rem;
 }
-
-.views-exposed-form__item [id*="edit-langcode"],
-.views-exposed-form__item [id*="edit-uid"] {
+.views-exposed-form__item [id*=edit-langcode],
+.views-exposed-form__item [id*=edit-uid] {
   width: 12rem;
 }
 
@@ -26,7 +25,6 @@ input[type="text"] {
   min-height: 4rem;
   font-size: 1.6em;
 }
-
 .node-form .field--name-title .length-indicator {
   margin-top: -1rem;
 }
@@ -45,7 +43,6 @@ body.path-admin .panel.dashboard-block {
 .block-views-blockvarbase-google-analytics-summary-sessions-and-pageviews .panel__title {
   display: block;
 }
-
 .block-views-blockvarbase-google-analytics-summary-sessions-and-pageviews .description {
   padding: 20px;
 }
@@ -59,19 +56,15 @@ body.path-admin .panel.dashboard-block {
     width: 100%;
   }
 }
-
 .node-form div.autocomplete-deluxe-container:not(.autocomplete-deluxe-multiple) input.autocomplete-deluxe-form {
   width: 100%;
 }
-
 .node-form .claro-autocomplete {
   width: 65%;
 }
-
 .node-form .claro-autocomplete .claro-autocomplete__message {
   display: none;
 }
-
 .node-form .claro-autocomplete input {
   width: 100%;
   padding-right: 1.875rem;
@@ -82,23 +75,18 @@ body.path-admin .panel.dashboard-block {
     width: 100%;
   }
 }
-
 .node-form .accordion .claro-autocomplete {
   width: 100%;
 }
-
 .node-form .js input.form-autocomplete {
   background: url("../images/search-autocomplete.svg") no-repeat 100% 50%;
 }
-
 .node-form .js input.form-autocomplete.ui-autocomplete-loading {
   background: url("../images/search-autocompleting.svg") no-repeat 100% 50%;
 }
-
 .node-form .js .is-autocompleting + .claro-autocomplete__message {
   display: none;
 }
-
 .node-form .field--type-yoast-seo input {
   width: 66%;
 }
@@ -112,7 +100,6 @@ body.path-admin .panel.dashboard-block {
 .media-library-item .media-library-edit__link {
   right: 40px;
 }
-
 .media-library-item .media-library-edit__link,
 .media-library-item .media-library-item__remove.button:first-child {
   top: 10px;
@@ -122,12 +109,10 @@ body.path-admin .panel.dashboard-block {
   background-size: 13px;
   font-size: 0;
 }
-
 .media-library-item .media-library-edit__link:not(:focus),
 .media-library-item .media-library-item__remove.button:first-child:not(:focus) {
   box-shadow: none;
 }
-
 .media-library-item .media-library-edit__link:hover,
 .media-library-item .media-library-edit__link:focus,
 .media-library-item .media-library-item__remove.button:first-child:hover,
@@ -135,7 +120,6 @@ body.path-admin .panel.dashboard-block {
   color: transparent;
   border-color: #40b6ff !important;
 }
-
 .media-library-item .media-library-edit__link:active,
 .media-library-item .media-library-item__remove.button:first-child:active {
   outline: 2px dotted transparent;
@@ -153,7 +137,7 @@ body.path-admin .panel.dashboard-block {
 }
 
 fieldset.fieldset {
-  border-color: #d8d9e0;
+  border-color: rgb(216, 217, 224);
 }
 
 @media screen and (min-width: 61rem) {
@@ -163,9 +147,11 @@ fieldset.fieldset {
   .layout-region--node-main .layout-region__content {
     max-width: 100%;
   }
+
   .layout-region--node-footer .layout-region__content {
     max-width: 100%;
   }
+
   .layout-region--node-secondary {
     width: 35%;
   }

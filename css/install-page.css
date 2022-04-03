@@ -1,5 +1,4 @@
 body.install-page {
-  -o-object-fit: cover;
   object-fit: cover;
   background-color: initial !important;
   background-image: url("../images/varbase-bg.jpg");
@@ -11,15 +10,12 @@ body.install-page {
   background-origin: initial !important;
   background-size: cover !important;
 }
-
 body.install-page .other-lang-warn {
   display: none;
 }
-
 body.install-page .other-lang-warn .visible {
   display: block;
 }
-
 body.install-page .logo a {
   background-color: transparent;
   background-image: url("../images/vardot-white-logo.png");
@@ -31,7 +27,6 @@ body.install-page .logo a {
   background-origin: initial;
   background-size: 100%;
 }
-
 body.install-page .site-version {
   padding-left: 10px;
   vertical-align: initial !important;
@@ -45,18 +40,20 @@ body.install-page .site-version {
     float: left;
     width: 35%;
   }
+
   [dir=rtl] .layout-sidebar-first {
     float: right;
   }
+
   main {
     float: right;
     width: 60%;
   }
+
   [dir=rtl] main {
     float: left;
   }
 }
-
 footer.installer-footer {
   width: 75%;
   max-width: 770px;
@@ -64,13 +61,11 @@ footer.installer-footer {
   color: white;
   border-radius: 5px;
 }
-
 footer.installer-footer #credit {
   float: right;
   padding: 20px 0 40px;
   font-size: 11px;
 }
-
 footer.installer-footer #credit a {
   float: right;
   clear: right;
@@ -80,7 +75,7 @@ footer.installer-footer #credit a {
   padding: 50px 0 0;
 }
 
-[dir="rtl"] footer.installer-footer #credit {
+[dir=rtl] footer.installer-footer #credit {
   float: left;
   padding: 20px 0 40px;
   text-align: left;
@@ -95,6 +90,7 @@ footer.installer-footer #credit a {
   .page-title {
     margin-left: 1.3em !important;
   }
+
   .task-list li {
     padding: 0.5em 1em 0.5em 2em;
   }
