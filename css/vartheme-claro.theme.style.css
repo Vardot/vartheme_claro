@@ -19,6 +19,9 @@ input[type=text] {
 .views-exposed-form__item [id*=edit-uid] {
   width: 12rem;
 }
+.views-exposed-form__item .ui-autocomplete-input {
+  padding-right: 32px;
+}
 
 .node-form .field--name-title input {
   width: 100%;
