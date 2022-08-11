@@ -38,7 +38,7 @@ function vartheme_claro_preprocess_install_page(&$variables) {
     $profile_name = $install_state['parameters']['profile'];
   }
 
-  $current_profile_path = drupal_get_path('profile', $profile_name);
+  $current_profile_path = \Drupal::service('extension.list.profile')->getPath($profile_name);
   // Profile logo.
   if (file_exists($current_profile_path . '/images/' . $profile_name . '-logo.png')) {
     $variables['profile_logo'] = base_path() . $current_profile_path . '/images/' . $profile_name . '-logo.png';
