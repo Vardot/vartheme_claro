@@ -209,3 +209,9 @@ td > .ajax-new-content > .form-item > .form-element {
     width: inherit;
   }
 }
+
+@media screen and (max-width: 48rem) {
+  .is-horizontal .tabs--secondary {
+    flex-wrap: wrap;
+  }
+}

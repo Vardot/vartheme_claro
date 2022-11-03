@@ -1,6 +1,5 @@
 html {
-  font-size: 90%;
-  /* Make the elements smaller for Varbase admin */
+  font-size: 90%; /* Make the elements smaller for Varbase admin */
 }
 
 input[type=text] {
@@ -150,11 +149,9 @@ fieldset.fieldset {
   .layout-region--node-main .layout-region__content {
     max-width: 100%;
   }
-
   .layout-region--node-footer .layout-region__content {
     max-width: 100%;
   }
-
   .layout-region--node-secondary {
     width: 35%;
   }
@@ -164,5 +161,11 @@ fieldset.fieldset {
   td > .form-item > .form-element,
   td > .ajax-new-content > .form-item > .form-element {
     width: inherit;
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  .is-horizontal .tabs--secondary {
+    flex-wrap: wrap;
   }
 }

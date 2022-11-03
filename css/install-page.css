@@ -40,16 +40,13 @@ body.install-page .site-version {
     float: left;
     width: 35%;
   }
-
   [dir=rtl] .layout-sidebar-first {
     float: right;
   }
-
   main {
     float: right;
     width: 60%;
   }
-
   [dir=rtl] main {
     float: left;
   }
@@ -90,7 +87,6 @@ footer.installer-footer #credit a {
   .page-title {
     margin-left: 1.3em !important;
   }
-
   .task-list li {
     padding: 0.5em 1em 0.5em 2em;
   }
