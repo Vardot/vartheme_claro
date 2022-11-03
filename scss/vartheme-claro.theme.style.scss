@@ -210,8 +210,10 @@ td > .ajax-new-content > .form-item > .form-element {
   }
 }
 
-@media screen and (max-width: 48rem) {
-  .is-horizontal .tabs--secondary {
-    flex-wrap: wrap;
+@media screen and (min-width: 48em) {
+  .is-horizontal {
+    .tabs--secondary {
+      flex-wrap: wrap;
+    }
   }
 }

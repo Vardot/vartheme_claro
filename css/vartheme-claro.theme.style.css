@@ -164,7 +164,7 @@ fieldset.fieldset {
   }
 }
 
-@media screen and (max-width: 48rem) {
+@media screen and (min-width: 48em) {
   .is-horizontal .tabs--secondary {
     flex-wrap: wrap;
   }
