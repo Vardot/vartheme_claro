@@ -25,17 +25,16 @@
   }
 
   .auth-link {
-    text-decoration: none;
-    font-family: Roboto, sans-serif;
-    font-size: var(--gin-font-size-m);
-    font-weight:var(--gin-font-weight-heavy);
-    line-height: 1.5rem;
+    font-family: Roboto,sans-serif;
+    font-size: var(--gin-font-size-l);
+    font-weight: var(--gin-font-weight-heavy);
+    line-height: var(--gin-font-size-xs);
   }
 
   .auth-icon {
-    margin-right: var(--gin-spacing-s);
-    width: var(--gin-spacing-m) !important;
-    height: var(--gin-spacing-m) !important;
+    width: var(--gin-spacing-l) !important;
+    height: var(--gin-spacing-l) !important;
+    margin-right: var(--gin-spacing-m);
   }
 
 }
