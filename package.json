@@ -1,7 +1,7 @@
 {
   "name": "vartheme_claro",
   "private": true,
-  "description": "Vartheme Claro",
+  "description": "A modern administration theme for Varbase standard websites. Based on the Gin Admin Theme and Claro Drupal core admin theme.",
   "license": "GPL-2.0",
   "main": "gulpfile.js",
   "engines": {
@@ -21,6 +21,7 @@
   "keywords": [
     "SASS",
     "Claro",
+    "Gin",
     "Drupal",
     "Varbase",
     "Admin Theme"

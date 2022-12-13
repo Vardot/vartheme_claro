@@ -2,15 +2,20 @@
 global-admin-styling:
   css:
     theme:
-      css/vartheme-claro.theme.style.css: {}
+      css/theme/vartheme-claro.theme.style.css: { }
 
 # Global admin right to left styling.
 global-admin-styling-rtl:
   css:
     theme:
-      css/vartheme-claro.theme.style-rtl.css: {}
+      css/theme/vartheme-claro.theme.style-rtl.css: { }
 
 # Global admin scripts.
-global-admin-scripts:
-  js:
-    js/vartheme-claro.script.js: {}
+# global-admin-scripts:
+#   js:
+#     js/vartheme-claro.script.js: { }
+
+auth-icons:
+  css:
+    theme:
+      css/theme/auth-icons.theme.css: { }

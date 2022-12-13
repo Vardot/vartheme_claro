@@ -1,0 +1,41 @@
+
+.social-auth {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .social-network {
+    width: 40%;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease 0s, color;
+    border-width: initial;
+    border-color: initial;
+    border-radius: var(--gin-spacing-xxs);
+    border-image: initial;
+    box-shadow: 0 1px var(--gin-spacing-xs) var(--gin-shadow-button) !important;
+    margin: var(--gin-spacing-m);
+    padding: var(--gin-spacing-s) var(--gin-spacing-l) var(--gin-spacing-s) var(--gin-spacing-s);
+    
+    &:active,
+    &:hover,
+    &:focus {
+      box-shadow: 0 1px var(--gin-spacing-s) var(--gin-shadow-button) !important;
+    }
+  }
+
+  .auth-link {
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-size: var(--gin-font-size-m);
+    font-weight:var(--gin-font-weight-heavy);
+    line-height: 1.5rem;
+  }
+
+  .auth-icon {
+    margin-right: var(--gin-spacing-s);
+    width: var(--gin-spacing-m) !important;
+    height: var(--gin-spacing-m) !important;
+  }
+
+}
