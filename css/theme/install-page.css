@@ -80,21 +80,5 @@ footer.installer-footer #credit a {
 }
 
 .installer-logo {
-  width: 222px;
-}
-
-@media (min-width: 48em) {
-  .page-title {
-    margin-left: 1.3em !important;
-  }
-  .task-list li {
-    padding: 0.5em 1em 0.5em 2em;
-  }
-}
-@media screen and (min-width: 38em) {
-  .toolbar-tray-open:not(.toolbar-vertical) .layout-container,
-  body:not(.toolbar-tray-open) .layout-container {
-    margin-right: auto !important;
-    margin-left: auto !important;
-  }
+  width: 18rem;
 }
