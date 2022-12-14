@@ -22,14 +22,13 @@
   box-shadow: 0 1px var(--gin-spacing-s) var(--gin-shadow-button) !important;
 }
 .social-auth .auth-link {
-  text-decoration: none;
   font-family: Roboto, sans-serif;
-  font-size: var(--gin-font-size-m);
+  font-size: var(--gin-font-size-l);
   font-weight: var(--gin-font-weight-heavy);
-  line-height: 1.5rem;
+  line-height: var(--gin-font-size-xs);
 }
 .social-auth .auth-icon {
-  width: var(--gin-spacing-m) !important;
-  height: var(--gin-spacing-m) !important;
-  margin-right: var(--gin-spacing-s);
+  width: var(--gin-spacing-l) !important;
+  height: var(--gin-spacing-l) !important;
+  margin-right: var(--gin-spacing-m);
 }
