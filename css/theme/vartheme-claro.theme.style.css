@@ -1,7 +1,3 @@
-html {
-  font-size: 90%; /* Make the elements smaller for Varbase admin */
-}
-
 input[type=text] {
   max-width: 100%;
 }
@@ -36,7 +32,6 @@ body.path-admin .panel.dashboard-block {
   margin-top: var(--gin-spacing-m);
   margin-bottom: var(--gin-spacing-m);
   border: var(--gin-border-xxs) solid var(--gin-border-color-layer2);
-  border-radius: var(--gin-border-xxs);
   background-color: var(--gin-bg-layer3);
   box-shadow: var(--gin-shadow-l1);
 }
@@ -48,7 +43,7 @@ body.path-admin .panel.dashboard-block p {
   display: block;
 }
 .block-views-blockvarbase-google-analytics-summary-sessions-and-pageviews .description {
-  padding: 20px;
+  padding: var(--gin-spacing-l);
 }
 
 .node-form div.autocomplete-deluxe-container {

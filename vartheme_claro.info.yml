@@ -18,13 +18,12 @@ regions:
 regions_hidden:
   - sidebar_first
 libraries:
-  - claro/global-styling
-  - gin/gin
   - vartheme_claro/global-admin-styling
+  # When having a custom JavaScript.
   # - vartheme_claro/global-admin-scripts
 libraries-override:
   claro/install-page:
     css:
       theme:
-        css/theme/install-page.css: css/install-page.css
+        css/theme/install-page.css: css/theme/install-page.css
   social_auth/auth-icons: vartheme_claro/auth-icons

@@ -23,9 +23,15 @@
     }
   },
   "require": {
+    "composer/installers": "~2.0",
+    "oomphinc/composer-installers-extender": "~2.0",
+    "cweagans/composer-patches": "~1.0",
     "drupal/core": "~9.0 || ~10.0",
     "drupal/gin": "~3.0",
     "drupal/gin_login": "~2.0",
     "drupal/gin_toolbar": "~1.0"
-  }
+  }, 
+  "enable-patching": true,
+  "composer-exit-on-patch-failure": true,
+  "patches": {  }
 }
