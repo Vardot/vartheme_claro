@@ -1,7 +1,7 @@
 body.install-page {
   object-fit: cover;
   background-color: initial !important;
-  background-image: url("../images/varbase-bg.jpg");
+  background-image: url("../../images/varbase-bg.jpg");
   background-repeat: no-repeat !important;
   background-attachment: fixed !important;
   background-position-x: center !important;
@@ -18,7 +18,7 @@ body.install-page .other-lang-warn .visible {
 }
 body.install-page .logo a {
   background-color: transparent;
-  background-image: url("../images/vardot-white-logo.png");
+  background-image: url("../../images/vardot-white-logo.png");
   background-repeat: no-repeat;
   background-attachment: initial;
   background-position-x: 0;
