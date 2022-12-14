@@ -1,5 +1,6 @@
 # Schema for the configuration files of the Vartheme Claro theme.
+# Based on the Gin admin theme settings type.
 
 vartheme_claro.settings:
-  type: theme_settings
-  label: "Vartheme Claro settings"
+  type: gin.settings
+  label: "Vartheme Claro settings based on the Gin Admin settings."

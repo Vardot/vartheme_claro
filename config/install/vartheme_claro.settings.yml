@@ -6,7 +6,7 @@ features:
   favicon: true
   node_user_picture: true
 logo:
-  path: themes/contrib/vartheme_bs5/logo.svg
+  path: themes/contrib/vartheme_claro/images/varbase-medium-logo-emblem-color.png
   use_default: false
 enable_darkmode: '0'
 preset_accent_color: null
