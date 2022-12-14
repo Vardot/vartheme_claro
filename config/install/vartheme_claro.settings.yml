@@ -8,14 +8,14 @@ features:
 logo:
   path: themes/contrib/vartheme_claro/images/varbase-medium-logo-emblem-color.png
   use_default: false
-enable_darkmode: '0'
 preset_accent_color: null
-accent_color: ''
 preset_focus_color: gin
+enable_darkmode: '0'
+classic_toolbar: vertical
+secondary_toolbar_frontend: true
+high_contrast_mode: false
+accent_color: ''
 focus_color: ''
-high_contrast_mode: 0
-classic_toolbar: null
-secondary_toolbar_frontend: 1
 layout_density: ''
-show_description_toggle: 1
-show_user_theme_settings: 1
+show_description_toggle: true
+show_user_theme_settings: true
