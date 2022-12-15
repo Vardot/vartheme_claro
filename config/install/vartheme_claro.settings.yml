@@ -8,7 +8,7 @@ features:
 logo:
   path: themes/contrib/vartheme_claro/images/varbase-medium-logo-emblem-color.png
   use_default: false
-preset_accent_color: null
+preset_accent_color: blue
 preset_focus_color: gin
 enable_darkmode: '0'
 classic_toolbar: vertical
