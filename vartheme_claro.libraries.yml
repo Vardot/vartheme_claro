@@ -19,3 +19,7 @@ auth-icons:
   css:
     theme:
       css/theme/auth-icons.theme.css: { }
+toolbar-secondary-moderation-sidebar:
+  css:
+    component:
+      css/components/toolbar-secondary-moderation-sidebar.component.css: { }

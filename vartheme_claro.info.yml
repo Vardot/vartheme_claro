@@ -27,3 +27,6 @@ libraries-override:
       theme:
         css/theme/install-page.css: css/theme/install-page.css
   social_auth/auth-icons: vartheme_claro/auth-icons
+libraries-extend:
+  moderation_sidebar/main:
+    - vartheme_claro/toolbar-secondary-moderation-sidebar
