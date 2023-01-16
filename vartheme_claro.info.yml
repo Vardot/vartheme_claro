@@ -30,3 +30,6 @@ libraries-override:
 libraries-extend:
   moderation_sidebar/main:
     - vartheme_claro/toolbar-secondary-moderation-sidebar
+
+ckeditor_stylesheets: false
+ckeditor5-stylesheets: false
