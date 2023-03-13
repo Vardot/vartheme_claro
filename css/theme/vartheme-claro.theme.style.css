@@ -70,3 +70,11 @@ body.path-admin .panel.dashboard-block p {
   padding: var(--gin-spacing-l);
   text-decoration: none;
 }
+
+.media-library-item .media-library-item__preview {
+  padding-bottom: 0 !important;
+}
+
+.media-library-item--grid .field--name-thumbnail img {
+  width: 100% !important;
+}
