@@ -2,26 +2,23 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
 }
 .social-auth .social-network {
-  width: 40%;
-  margin: var(--gin-spacing-m);
-  padding: var(--gin-spacing-s) var(--gin-spacing-l) var(--gin-spacing-s) var(--gin-spacing-s);
+  width: 45%;
+  margin: var(--gin-spacing-xxs);
+  padding: var(--gin-spacing-xs);
   cursor: pointer;
   transition: box-shadow 0.2s ease 0s, color;
-  border-width: initial;
-  border-color: initial;
-  border-radius: var(--gin-spacing-xxs);
-  border-image: initial;
-  box-shadow: 0 1px var(--gin-spacing-xs) var(--gin-shadow-button) !important;
+  border-width: 0;
 }
-.social-auth .social-network:active,
 .social-auth .social-network:hover,
+.social-auth .social-network:active,
 .social-auth .social-network:focus {
-  box-shadow: 0 1px var(--gin-spacing-s) var(--gin-shadow-button) !important;
+  box-shadow: 0 1px var(--gin-spacing-xxs) var(--gin-shadow-button) !important;
 }
 .social-auth .auth-link {
+  display: flex;
   font-family: Roboto, sans-serif;
   font-size: var(--gin-font-size-l);
   font-weight: var(--gin-font-weight-heavy);
@@ -30,5 +27,35 @@
 .social-auth .auth-icon {
   width: var(--gin-spacing-l) !important;
   height: var(--gin-spacing-l) !important;
-  margin-right: var(--gin-spacing-m);
+  margin-right: var(--gin-spacing-s);
+  margin-left: 0;
+}
+
+[dir=rtl] .social-auth {
+  justify-content: right;
+}
+[dir=rtl] .social-auth .auth-icon {
+  margin-right: 0;
+  margin-left: var(--gin-spacing-s);
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  width: calc(4 * var(--gin-spacing-xxxl) + 3 * var(--gin-spacing-xxxl));
+  margin: var(--gin-spacing-m) 0 0;
+}
+.separator .separator-start,
+.separator .separator-end {
+  width: 100%;
+  height: 0.0625em;
+  background-color: var(--color-gray-200);
+}
+.separator .separator-text {
+  margin: 0 var(--gin-spacing-m);
+  color: var(--color-gray-400);
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1rem;
 }

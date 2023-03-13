@@ -1,26 +1,21 @@
-
 .social-auth {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
 
   .social-network {
-    width: 40%;
+    width: 45%;
     cursor: pointer;
+    margin: var(--gin-spacing-xxs);
+    padding: var(--gin-spacing-xs);
+    border-width: 0;
     transition: box-shadow 0.2s ease 0s, color;
-    border-width: initial;
-    border-color: initial;
-    border-radius: var(--gin-spacing-xxs);
-    border-image: initial;
-    box-shadow: 0 1px var(--gin-spacing-xs) var(--gin-shadow-button) !important;
-    margin: var(--gin-spacing-m);
-    padding: var(--gin-spacing-s) var(--gin-spacing-l) var(--gin-spacing-s) var(--gin-spacing-s);
-    
-    &:active,
+
     &:hover,
+    &:active,
     &:focus {
-      box-shadow: 0 1px var(--gin-spacing-s) var(--gin-shadow-button) !important;
+      box-shadow: 0 1px var(--gin-spacing-xxs) var(--gin-shadow-button) !important;
     }
   }
 
@@ -29,12 +24,49 @@
     font-size: var(--gin-font-size-l);
     font-weight: var(--gin-font-weight-heavy);
     line-height: var(--gin-font-size-xs);
+    display: flex;
   }
 
   .auth-icon {
     width: var(--gin-spacing-l) !important;
     height: var(--gin-spacing-l) !important;
-    margin-right: var(--gin-spacing-m);
+    margin-right: var(--gin-spacing-s);
+    margin-left: 0;
   }
 
+}
+
+[dir="rtl"] {
+  .social-auth {
+    justify-content: right;
+
+    .auth-icon {
+      margin-right: 0;
+      margin-left: var(--gin-spacing-s);
+    }
+  }
+}
+
+.separator {
+  margin: var(--gin-spacing-m) 0px 0px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: calc((4 * var(--gin-spacing-xxxl)) + (3 * var(--gin-spacing-xxxl)));
+
+  .separator-start,
+  .separator-end {
+    height: calc(1em / 16);
+    background-color: var(--color-gray-200);
+    width: 100%;
+  }
+
+  .separator-text {
+    margin: 0px var(--gin-spacing-m);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 1rem;
+    color: var(--color-gray-400);
+  }
 }
