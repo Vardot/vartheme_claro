@@ -43,7 +43,7 @@
   display: flex;
   align-items: center;
   width: calc(4 * var(--gin-spacing-xxxl) + 3 * var(--gin-spacing-xxxl));
-  margin: var(--gin-spacing-m) 0 0;
+  margin: var(--gin-spacing-xxl) 0;
 }
 .separator .separator-start,
 .separator .separator-end {
@@ -58,4 +58,12 @@
   font-weight: 600;
   font-style: normal;
   line-height: 1rem;
+}
+
+.social-auth-login-hint {
+  margin: var(--gin-spacing-l) var(--gin-spacing-m);
+}
+
+.account-auth-login-hint {
+  margin: var(--gin-spacing-xxs) 0;
 }

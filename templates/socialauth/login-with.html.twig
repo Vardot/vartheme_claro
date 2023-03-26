@@ -1,5 +1,6 @@
 {{ attach_library('social_auth/auth-icons') }}
 
+<div class="social-auth-login-hint">{{ 'Log in with your linked account'|t }}</div>
 <div class="social-auth">
   {% for social_network_index, social_network in social_networks %}
     <div class="social-network {{ social_network_index }}">
@@ -17,7 +18,8 @@
   {% endfor %}
 </div>
 <div class="separator">
-<div class="separator-start"></div>
-<span class="separator-text">{{ 'or'|t }}</span>
-<div class="separator-end"></div>
+  <div class="separator-start"></div>
+    <span class="separator-text">{{ 'or'|t }}</span>
+  <div class="separator-end"></div>
 </div>
+<div class="account-auth-login-hint">{{ 'Log in using your email or user account'|t }}</div>

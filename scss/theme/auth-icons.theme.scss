@@ -48,7 +48,7 @@
 }
 
 .separator {
-  margin: var(--gin-spacing-m) 0px 0px;
+  margin: var(--gin-spacing-xxl) 0;
   display: flex;
   -webkit-box-align: center;
   align-items: center;
@@ -69,4 +69,12 @@
     line-height: 1rem;
     color: var(--color-gray-400);
   }
+}
+
+.social-auth-login-hint {
+  margin: var(--gin-spacing-l) var(--gin-spacing-m);
+}
+
+.account-auth-login-hint {
+  margin: var(--gin-spacing-xxs) 0;
 }
