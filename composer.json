@@ -27,7 +27,7 @@
     "oomphinc/composer-installers-extender": "~2.0",
     "cweagans/composer-patches": "~1.0",
     "drupal/core": "~9.0 || ~10.0",
-    "drupal/gin": "3.0-rc3",
+    "drupal/gin": "3.0.0-rc3",
     "drupal/gin_toolbar": "~1.0",
     "drupal/gin_moderation_sidebar": "~1.0"
   }, 
