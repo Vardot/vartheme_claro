@@ -27,11 +27,16 @@
     "oomphinc/composer-installers-extender": "~2.0",
     "cweagans/composer-patches": "~1.0",
     "drupal/core": "~9.0 || ~10.0",
-    "drupal/gin": "~3.0",
+    "drupal/gin": "3.0-rc3",
     "drupal/gin_toolbar": "~1.0",
     "drupal/gin_moderation_sidebar": "~1.0"
   }, 
   "enable-patching": true,
   "composer-exit-on-patch-failure": true,
-  "patches": {  }
+  "patches": {
+    "drupal/gin": {
+      "Issue #3357587: Fix Custom wide or squire logo in toolbar floated on left":
+      "https://www.drupal.org/files/issues/2023-05-02/3357587-5.patch"
+    }
+  }
 }
