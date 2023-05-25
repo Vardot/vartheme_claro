@@ -8,6 +8,16 @@
  */
 
 /**
+ * Implements hook_preprocess_html().
+ */
+function vartheme_claro_preprocess_html(&$variables) {
+
+  // The path for Vartheme Claro theme in variables.
+  $variables['vartheme_claro_path'] = \Drupal::request()->getBaseUrl() . '/' . \Drupal::service('extension.list.theme')->getPath('vartheme_claro');
+
+}
+
+/**
  * Implements hook_preprocess_install_page().
  */
 function vartheme_claro_preprocess_install_page(&$variables) {
@@ -24,7 +34,7 @@ function vartheme_claro_preprocess_install_page(&$variables) {
   $current_profile_path = \Drupal::service('extension.list.profile')->getPath($profile_name);
   // Profile logo.
   if (file_exists($current_profile_path . '/images/' . $profile_name . '-logo.png')) {
-    $variables['profile_logo'] = base_path() . $current_profile_path . '/images/' . $profile_name . '-logo.png';
+    $variables['profile_logo'] =  \Drupal::request()->getBaseUrl() . '/' . $current_profile_path . '/images/' . $profile_name . '-logo.png';
   }
 
   // Attach install page library.

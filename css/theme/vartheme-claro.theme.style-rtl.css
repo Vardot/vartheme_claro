@@ -1,17 +1,31 @@
-@font-face {
-  font-family: "Tajawal";
-  src: url("../fonts/tajawal/tajawal-regular-webfont.eot");
-  src: url("../fonts/tajawal/tajawal-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/tajawal/tajawal-regular-webfont.woff2") format("woff2"), url("../fonts/tajawal/tajawal-regular-webfont.woff") format("woff"), url("../fonts/tajawal/tajawal-regular-webfont.ttf") format("truetype"), url("../fonts/tajawal/tajawal-regular-webfont.svg#tajawalregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
+[dir=rtl]:root {
+  --gin-font: "Tajawal", sans-serif;
+  --gin-font-size-xxs: .75rem;
+  --gin-font-size-xs: small;
+  --gin-font-size-s: .875rem;
+  --gin-font-size: 1rem;
+  --gin-font-size-m: var(--gin-font-size);
+  --gin-font-size-l: 1.125rem;
+  --gin-font-size-xl: 1.25rem;
+  --gin-font-size-h3: 1.5rem;
+  --gin-font-size-h2: 1.75rem;
+  --gin-font-size-h1: 1.6rem;
+  --gin-font-size-quote: 1.1em;
+  --gin-font-weight-normal: 500;
+  --gin-font-weight-semibold: 626;
+  --gin-font-weight-bold: 600;
+  --gin-font-weight-heavy: 700;
 }
-body {
-  font-family: "Tajawal", sans-serif;
+
+[dir=rtl] .page-title {
+  letter-spacing: normal;
 }
-body .action-links .button--primary {
-  font-family: "Tajawal", sans-serif;
+
+[dir=rtl] .gin--edit-form .field--name-title .form-element {
+  letter-spacing: normal;
 }
 
 #yoast-wrapper {
   direction: ltr;
 }
+

@@ -8,6 +8,7 @@ global-admin-styling:
 global-admin-styling-rtl:
   css:
     theme:
+      fonts/rtl/tajawal/css/tajawal.css: { }
       css/theme/vartheme-claro.theme.style-rtl.css: { }
 
 # Global admin scripts.
@@ -19,4 +20,3 @@ auth-icons:
   css:
     theme:
       css/theme/auth-icons.theme.css: { }
-

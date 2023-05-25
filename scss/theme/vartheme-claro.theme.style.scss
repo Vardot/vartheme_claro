@@ -24,17 +24,30 @@ input[type="text"] {
 
 }
 
-.node-form {
+.gin--edit-form {
   .field--name-title {
-    input {
+    .form-element {
       font-size: 1.6em;
       width: 100%;
-      min-height: 4rem;
     }
 
+    input {
+      min-height: 4rem;
+    }
+  }
+}
+
+.node-form {
+  .field--name-title {
     .length-indicator {
       margin-top: -1rem;
     }
+  }
+}
+
+.media-library-widget {
+  .fieldset-wrapper {
+    padding: var(--gin-spacing-density-s);
   }
 }
 
