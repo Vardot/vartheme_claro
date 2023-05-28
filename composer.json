@@ -37,7 +37,9 @@
     "patches": {
       "drupal/gin": {
         "Issue #3357587: Fix Custom wide or squire logo in toolbar floated on left":
-        "https://www.drupal.org/files/issues/2023-05-02/3357587-5.patch"
+        "https://www.drupal.org/files/issues/2023-05-02/3357587-5.patch",
+        "Issue #3325263: Fix user.data ServiceNotFoundException when using Gin as distribution installer theme":
+        "https://www.drupal.org/files/issues/2023-05-28/3325263-18.patch"
       }
     }
   }
