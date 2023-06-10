@@ -22,11 +22,16 @@ libraries:
   # When having a custom JavaScript.
   # - vartheme_claro/global-admin-scripts
 libraries-override:
+  social_auth/auth-icons: vartheme_claro/auth-icons
   claro/install-page:
     css:
       theme:
-        css/theme/install-page.css: css/theme/install-page.css
-  social_auth/auth-icons: vartheme_claro/auth-icons
+        css/theme/install-page.css: false
+
+libraries-extend:
+  claro/install-page:
+    - vartheme_claro/install-styling
+    - vartheme_claro/install-scripts
 
 ckeditor_stylesheets: false
 ckeditor5-stylesheets: false

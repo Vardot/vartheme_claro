@@ -11,10 +11,18 @@ global-admin-styling-rtl:
       fonts/rtl/tajawal/css/tajawal.css: { }
       css/theme/vartheme-claro.theme.style-rtl.css: { }
 
-# Global admin scripts.
-# global-admin-scripts:
-#   js:
-#     js/vartheme-claro.script.js: { }
+# Custom install styling.
+install-styling:
+  css:
+    theme:
+      css/theme/install-page.css: { }
+
+# Custom install scripts.
+install-scripts:
+  js:
+    js/install-scripts.js: { }
+  dependencies:
+    - gin/gin_accent
 
 auth-icons:
   css:

@@ -64,18 +64,3 @@ function vartheme_claro_preprocess_login_with(&$variables) {
   }
 
 }
-
-/**
- * Implements hook_css_alter().
- */
-function vartheme_claro_css_alter(&$css, AttachedAssetsInterface $assets) {
-
-  global $install_state;
-  if (isset($install_state) && empty($install_state['installation_finished'])) {
-    // Not to load not styled gin accent while installing.
-    // As no user Gin setting yet and no user service yet.
-    $gin_theme_css_path = \Drupal::service('extension.list.theme')->getPath('gin') . '/dist/css';
-    unset($css[$gin_theme_css_path . '/base/gin.css']);
-  }
-
-}
