@@ -126,12 +126,6 @@ libraries-override:
         /core/themes/stable/css/views_ui/views_ui.admin.theme.css: /core/themes/claro/css/theme/views_ui.admin.theme.css
 
 libraries-extend:
-  ckeditor/drupal.ckeditor:
-    - claro/ckeditor-editor
-  ckeditor/drupal.ckeditor.admin:
-    - claro/ckeditor-admin
-  core/ckeditor:
-    - claro/ckeditor-dialog
   core/drupal.collapse:
     - claro/details-focus
   core/drupal.dialog:
