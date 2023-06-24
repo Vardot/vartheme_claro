@@ -52,7 +52,6 @@ body.path-admin .panel.dashboard-block {
 .node-form div.autocomplete-deluxe-container {
   width: 65%;
 }
-
 @media screen and (max-width: 81.25rem) {
   .node-form div.autocomplete-deluxe-container {
     width: 100%;
@@ -71,7 +70,6 @@ body.path-admin .panel.dashboard-block {
   width: 100%;
   padding-right: 1.875rem;
 }
-
 @media screen and (max-width: 81.25rem) {
   .node-form .claro-autocomplete {
     width: 100%;
@@ -92,7 +90,6 @@ body.path-admin .panel.dashboard-block {
 .node-form .field--type-yoast-seo input {
   width: 66%;
 }
-
 @media screen and (max-width: 81.25rem) {
   .node-form .field--type-yoast-seo input {
     width: 100%;
@@ -140,21 +137,6 @@ body.path-admin .panel.dashboard-block {
 
 fieldset.fieldset {
   border-color: rgb(216, 217, 224);
-}
-
-@media screen and (min-width: 61rem) {
-  .layout-region--node-main {
-    width: 65%;
-  }
-  .layout-region--node-main .layout-region__content {
-    max-width: 100%;
-  }
-  .layout-region--node-footer .layout-region__content {
-    max-width: 100%;
-  }
-  .layout-region--node-secondary {
-    width: 35%;
-  }
 }
 
 @media screen and (max-width: 37.5rem) {

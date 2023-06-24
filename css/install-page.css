@@ -91,7 +91,6 @@ footer.installer-footer #credit a {
     padding: 0.5em 1em 0.5em 2em;
   }
 }
-
 @media screen and (min-width: 38em) {
   .toolbar-tray-open:not(.toolbar-vertical) .layout-container,
   body:not(.toolbar-tray-open) .layout-container {

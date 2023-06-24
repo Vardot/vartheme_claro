@@ -14,3 +14,15 @@ global-admin-styling-rtl:
 global-admin-scripts:
   js:
     js/vartheme-claro.script.js: {}
+
+# Claro 9 layout node form style for Drupal 9.
+claro9.layout-node-form:
+  css:
+    theme:
+      css/layout-node-form.claro9.theme.css: {}
+
+# Claro 10 layout node form style for Drupal 10.
+claro10.layout-node-form:
+  css:
+    theme:
+      css/layout-node-form.claro10.theme.css: {}
