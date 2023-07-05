@@ -47,7 +47,6 @@
       {{ attach_library('vartheme_claro/global-admin-styling-rtl') }}
     {%- endif -%}
     <js-placeholder token="{{ placeholder_token }}">
-    {% include '@vartheme_claro/includes/preload.twig' with { vartheme_claro_path: vartheme_claro_path, html_dir: html_attributes['dir'] } only %}
   </head>
 
   <body{{ attributes.addClass(body_classes) }}>
