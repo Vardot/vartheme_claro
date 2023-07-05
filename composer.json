@@ -27,7 +27,7 @@
     "oomphinc/composer-installers-extender": "~2.0",
     "cweagans/composer-patches": "~1.0",
     "drupal/core": "~9.5.0 || ~10.1.0",
-    "drupal/gin": "3.0.0-rc3",
+    "drupal/gin": "3.0.0-rc4",
     "drupal/gin_toolbar": "~1.0",
     "drupal/gin_moderation_sidebar": "~1.0"
   }, 
@@ -36,8 +36,6 @@
     "composer-exit-on-patch-failure": true,
     "patches": {
       "drupal/gin": {
-        "Issue #3357587: Fix Custom wide or squire logo in toolbar floated on left":
-        "https://www.drupal.org/files/issues/2023-05-02/3357587-5.patch",
         "Issue #3325263: Fix user.data ServiceNotFoundException when using Gin as distribution installer theme":
         "https://www.drupal.org/files/issues/2023-05-28/3325263-19.patch"
       }
