@@ -3,7 +3,7 @@ type: theme
 base theme: claro
 description: "A modern administration theme for Varbase standard websites. Based on the Claro Drupal core admin theme."
 alt text: "Screenshot of Vartheme Claro, Varbase administration theme."
-core_version_requirement: ^9 || ^10
+core_version_requirement: ~9.5.0 || ~10.1.0
 package: "Varbase"
 regions:
   header: "Header"
@@ -126,12 +126,6 @@ libraries-override:
         /core/themes/stable/css/views_ui/views_ui.admin.theme.css: /core/themes/claro/css/theme/views_ui.admin.theme.css
 
 libraries-extend:
-  ckeditor/drupal.ckeditor:
-    - claro/ckeditor-editor
-  ckeditor/drupal.ckeditor.admin:
-    - claro/ckeditor-admin
-  core/ckeditor:
-    - claro/ckeditor-dialog
   core/drupal.collapse:
     - claro/details-focus
   core/drupal.dialog:
@@ -184,8 +178,5 @@ libraries-extend:
 quickedit_stylesheets:
   - ../../../core/themes/claro/css/components/quickedit.css
 
-ckeditor_stylesheets:
-  - ../../../core/themes/claro/css/base/elements.css
-  - ../../../core/themes/claro/css/base/typography.css
-  - ../../../core/themes/claro/css/theme/ckeditor-frame.css
-  - ../../../core/themes/claro/css/classy/components/media-embed-error.css
+ckeditor_stylesheets: false
+ckeditor5-stylesheets: false
