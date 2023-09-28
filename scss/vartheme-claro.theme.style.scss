@@ -182,26 +182,6 @@ fieldset {
   }
 }
 
-@media screen and (min-width: 61rem) {
-  .layout-region--node-main {
-    width: 65%;
-
-    .layout-region__content {
-      max-width: 100%;
-    }
-  } 
-
-  .layout-region--node-footer {
-    .layout-region__content {
-      max-width: 100%;
-    }
-  }
-
-  .layout-region--node-secondary {
-    width: 35%;
-  }
-}
-
 // Fix styling of form elements in tables on mobile.
 td > .form-item > .form-element,
 td > .ajax-new-content > .form-item > .form-element {
