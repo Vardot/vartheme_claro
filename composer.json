@@ -37,7 +37,7 @@
     "patches": {
       "drupal/gin": {
         "Issue #3325263: Fix user.data ServiceNotFoundException when using Gin as distribution installer theme":
-        "https://www.drupal.org/files/issues/2023-05-28/3325263-19.patch"
+        "https://www.drupal.org/files/issues/2023-10-18/3325263-21.patch"
       }
     }
   }
