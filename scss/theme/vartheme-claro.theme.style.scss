@@ -119,3 +119,10 @@ body.path-admin .panel.dashboard-block {
     width: 100% !important;
   }
 }
+
+aside#admin-toolbar {
+  .admin-toolbar__logo {
+    border-radius: 0;
+    margin: 1rem;
+  }
+}
