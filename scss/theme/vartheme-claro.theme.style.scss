@@ -126,3 +126,22 @@ aside#admin-toolbar {
     margin: 1rem;
   }
 }
+
+.edit-created-from-wrapper,
+.edit-created-to-wrapper {
+  padding: 0;
+  margin: 1rem 0;
+  border: 0;
+
+  .form-item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+}
+
+.views-exposed-form__item {
+  #edit-uid {
+    width: 18rem;
+  }
+}
