@@ -127,17 +127,61 @@ aside#admin-toolbar {
   }
 }
 
-.edit-created-from-wrapper,
-.edit-created-to-wrapper {
-  padding: 0;
-  margin: 1rem 0;
-  border: 0;
+.views-exposed-form.views-exposed-form {
+  #edit-created-from-wrapper,
+  #edit-created-to-wrapper {
+    padding: 0;
+    border: 0;
+    height: 1rem;
+    margin: 0.9rem 0;
 
-  .form-item {
-    margin-left: 0;
-    margin-right: 0;
+    > .fieldset__legend > .fieldset__label {
+      padding: 0;
+      margin-bottom: var(--gin-spacing-xxs);
+    }
+
+    legend {
+      margin-bottom: var(--gin-spacing-xs);
+    }
+
+    .form-item {
+      margin-left: 0;
+    }
+
+    input {
+      height: 1rem;
+      margin-top: var(--gin-spacing-xxs);
+    }
+
   }
+}
 
+[dir="ltr"] .views-exposed-form.views-exposed-form {
+  #edit-created-from-wrapper,
+  #edit-created-to-wrapper {
+
+    .fieldset__wrapper {
+      margin-left: 0 !important;
+    }
+
+    .form-item {
+      margin-left: 0 !important;
+    }
+  }
+}
+
+[dir="rtl"] .views-exposed-form.views-exposed-form {
+  #edit-created-from-wrapper,
+  #edit-created-to-wrapper {
+
+    .fieldset__wrapper {
+      margin-right: 0 !important;
+    }
+
+    .form-item {
+      margin-right: 0 !important;
+    }
+  }
 }
 
 .views-exposed-form__item {

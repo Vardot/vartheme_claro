@@ -100,17 +100,54 @@ aside#admin-toolbar .admin-toolbar__logo {
   margin: 1rem;
 }
 
-.edit-created-from-wrapper,
-.edit-created-to-wrapper {
+.views-exposed-form.views-exposed-form #edit-created-from-wrapper,
+.views-exposed-form.views-exposed-form #edit-created-to-wrapper {
   padding: 0;
-  margin: 1rem 0;
   border: 0;
+  height: 1rem;
+  margin: .9rem 0;
 }
 
-.edit-created-from-wrapper .form-item,
-.edit-created-to-wrapper .form-item {
+.views-exposed-form.views-exposed-form #edit-created-from-wrapper > .fieldset__legend > .fieldset__label,
+.views-exposed-form.views-exposed-form #edit-created-to-wrapper > .fieldset__legend > .fieldset__label {
+  padding: 0;
+  margin-bottom: var(--gin-spacing-xxs);
+}
+
+.views-exposed-form.views-exposed-form #edit-created-from-wrapper legend,
+.views-exposed-form.views-exposed-form #edit-created-to-wrapper legend {
+  margin-bottom: var(--gin-spacing-xs);
+}
+
+.views-exposed-form.views-exposed-form #edit-created-from-wrapper .form-item,
+.views-exposed-form.views-exposed-form #edit-created-to-wrapper .form-item {
   margin-left: 0;
-  margin-right: 0;
+}
+
+.views-exposed-form.views-exposed-form #edit-created-from-wrapper input,
+.views-exposed-form.views-exposed-form #edit-created-to-wrapper input {
+  height: 1rem;
+  margin-top: var(--gin-spacing-xxs);
+}
+
+[dir=ltr] .views-exposed-form.views-exposed-form #edit-created-from-wrapper .fieldset__wrapper,
+[dir=ltr] .views-exposed-form.views-exposed-form #edit-created-to-wrapper .fieldset__wrapper {
+  margin-left: 0 !important;
+}
+
+[dir=ltr] .views-exposed-form.views-exposed-form #edit-created-from-wrapper .form-item,
+[dir=ltr] .views-exposed-form.views-exposed-form #edit-created-to-wrapper .form-item {
+  margin-left: 0 !important;
+}
+
+[dir=rtl] .views-exposed-form.views-exposed-form #edit-created-from-wrapper .fieldset__wrapper,
+[dir=rtl] .views-exposed-form.views-exposed-form #edit-created-to-wrapper .fieldset__wrapper {
+  margin-right: 0 !important;
+}
+
+[dir=rtl] .views-exposed-form.views-exposed-form #edit-created-from-wrapper .form-item,
+[dir=rtl] .views-exposed-form.views-exposed-form #edit-created-to-wrapper .form-item {
+  margin-right: 0 !important;
 }
 
 .views-exposed-form__item #edit-uid {
