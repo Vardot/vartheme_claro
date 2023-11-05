@@ -104,8 +104,7 @@ aside#admin-toolbar .admin-toolbar__logo {
 .views-exposed-form.views-exposed-form #edit-created-to-wrapper {
   padding: 0;
   border: 0;
-  height: 1rem;
-  margin: .9rem 0;
+  margin: .9rem 0 0 0;
 }
 
 .views-exposed-form.views-exposed-form #edit-created-from-wrapper > .fieldset__legend > .fieldset__label,
