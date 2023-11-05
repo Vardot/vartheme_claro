@@ -100,56 +100,51 @@ aside#admin-toolbar .admin-toolbar__logo {
   margin: 1rem;
 }
 
-.views-exposed-form.views-exposed-form #edit-created-from-wrapper,
-.views-exposed-form.views-exposed-form #edit-created-to-wrapper {
-  padding: 0;
-  border: 0;
-  margin: .9rem 0 0 0;
+.views-exposed-form.views-exposed-form fieldset[data-drupal-selector$=-from-wrapper],
+.views-exposed-form.views-exposed-form fieldset[data-drupal-selector$=-to-wrapper] {
+  padding: 0 !important;
+  border: 0 !important;
+  margin: .9rem 0 0 0 !important;
 }
 
-.views-exposed-form.views-exposed-form #edit-created-from-wrapper > .fieldset__legend > .fieldset__label,
-.views-exposed-form.views-exposed-form #edit-created-to-wrapper > .fieldset__legend > .fieldset__label {
+.views-exposed-form.views-exposed-form fieldset[data-drupal-selector$=-from-wrapper] > .fieldset__legend > .fieldset__label,
+.views-exposed-form.views-exposed-form fieldset[data-drupal-selector$=-to-wrapper] > .fieldset__legend > .fieldset__label {
   padding: 0;
   margin-bottom: var(--gin-spacing-xxs);
 }
 
-.views-exposed-form.views-exposed-form #edit-created-from-wrapper legend,
-.views-exposed-form.views-exposed-form #edit-created-to-wrapper legend {
+.views-exposed-form.views-exposed-form fieldset[data-drupal-selector$=-from-wrapper] legend,
+.views-exposed-form.views-exposed-form fieldset[data-drupal-selector$=-to-wrapper] legend {
   margin-bottom: var(--gin-spacing-xs);
 }
 
-.views-exposed-form.views-exposed-form #edit-created-from-wrapper .form-item,
-.views-exposed-form.views-exposed-form #edit-created-to-wrapper .form-item {
-  margin-left: 0;
+.views-exposed-form.views-exposed-form fieldset[data-drupal-selector$=-from-wrapper] input,
+.views-exposed-form.views-exposed-form fieldset[data-drupal-selector$=-to-wrapper] input {
+  height: 1rem !important;
+  margin-top: var(--gin-spacing-xxs) !important;
 }
 
-.views-exposed-form.views-exposed-form #edit-created-from-wrapper input,
-.views-exposed-form.views-exposed-form #edit-created-to-wrapper input {
-  height: 1rem;
-  margin-top: var(--gin-spacing-xxs);
-}
-
-[dir=ltr] .views-exposed-form.views-exposed-form #edit-created-from-wrapper .fieldset__wrapper,
-[dir=ltr] .views-exposed-form.views-exposed-form #edit-created-to-wrapper .fieldset__wrapper {
+[dir=ltr] .views-exposed-form.views-exposed-form fieldset[data-drupal-selector$=-from-wrapper] .fieldset__wrapper,
+[dir=ltr] .views-exposed-form.views-exposed-form fieldset[data-drupal-selector$=-to-wrapper] .fieldset__wrapper {
   margin-left: 0 !important;
 }
 
-[dir=ltr] .views-exposed-form.views-exposed-form #edit-created-from-wrapper .form-item,
-[dir=ltr] .views-exposed-form.views-exposed-form #edit-created-to-wrapper .form-item {
+[dir=ltr] .views-exposed-form.views-exposed-form fieldset[data-drupal-selector$=-from-wrapper] .form-item,
+[dir=ltr] .views-exposed-form.views-exposed-form fieldset[data-drupal-selector$=-to-wrapper] .form-item {
   margin-left: 0 !important;
 }
 
-[dir=rtl] .views-exposed-form.views-exposed-form #edit-created-from-wrapper .fieldset__wrapper,
-[dir=rtl] .views-exposed-form.views-exposed-form #edit-created-to-wrapper .fieldset__wrapper {
+[dir=rtl] .views-exposed-form.views-exposed-form fieldset[data-drupal-selector$=-from-wrapper] .fieldset__wrapper,
+[dir=rtl] .views-exposed-form.views-exposed-form fieldset[data-drupal-selector$=-to-wrapper] .fieldset__wrapper {
   margin-right: 0 !important;
 }
 
-[dir=rtl] .views-exposed-form.views-exposed-form #edit-created-from-wrapper .form-item,
-[dir=rtl] .views-exposed-form.views-exposed-form #edit-created-to-wrapper .form-item {
+[dir=rtl] .views-exposed-form.views-exposed-form fieldset[data-drupal-selector$=-from-wrapper] .form-item,
+[dir=rtl] .views-exposed-form.views-exposed-form fieldset[data-drupal-selector$=-to-wrapper] .form-item {
   margin-right: 0 !important;
 }
 
-.views-exposed-form__item #edit-uid {
+.views-exposed-form__item input[data-drupal-selector*=edit-uid] {
   width: 18rem;
 }
 

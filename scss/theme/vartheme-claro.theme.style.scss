@@ -128,11 +128,11 @@ aside#admin-toolbar {
 }
 
 .views-exposed-form.views-exposed-form {
-  #edit-created-from-wrapper,
-  #edit-created-to-wrapper {
-    padding: 0;
-    border: 0;
-    margin: 0.9rem 0 0 0;
+  fieldset[data-drupal-selector$="-from-wrapper"],
+  fieldset[data-drupal-selector$="-to-wrapper"] {
+    padding: 0 !important;
+    border: 0 !important;
+    margin: 0.9rem 0 0 0 !important;
 
     > .fieldset__legend > .fieldset__label {
       padding: 0;
@@ -143,21 +143,17 @@ aside#admin-toolbar {
       margin-bottom: var(--gin-spacing-xs);
     }
 
-    .form-item {
-      margin-left: 0;
-    }
-
     input {
-      height: 1rem;
-      margin-top: var(--gin-spacing-xxs);
+      height: 1rem !important;
+      margin-top: var(--gin-spacing-xxs) !important;
     }
 
   }
 }
 
 [dir="ltr"] .views-exposed-form.views-exposed-form {
-  #edit-created-from-wrapper,
-  #edit-created-to-wrapper {
+  fieldset[data-drupal-selector$="-from-wrapper"],
+  fieldset[data-drupal-selector$="-to-wrapper"] {
 
     .fieldset__wrapper {
       margin-left: 0 !important;
@@ -170,8 +166,8 @@ aside#admin-toolbar {
 }
 
 [dir="rtl"] .views-exposed-form.views-exposed-form {
-  #edit-created-from-wrapper,
-  #edit-created-to-wrapper {
+  fieldset[data-drupal-selector$="-from-wrapper"],
+  fieldset[data-drupal-selector$="-to-wrapper"] {
 
     .fieldset__wrapper {
       margin-right: 0 !important;
@@ -184,7 +180,7 @@ aside#admin-toolbar {
 }
 
 .views-exposed-form__item {
-  #edit-uid {
+  input[data-drupal-selector*="edit-uid"] {
     width: 18rem;
   }
 }
