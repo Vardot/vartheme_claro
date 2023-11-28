@@ -7,8 +7,6 @@
  * Have custom alteration over the theme layer.
  */
 
-use Drupal\Core\Asset\AttachedAssetsInterface;
-
 /**
  * Implements hook_preprocess_html().
  */
@@ -36,7 +34,7 @@ function vartheme_claro_preprocess_install_page(&$variables) {
   $current_profile_path = \Drupal::service('extension.list.profile')->getPath($profile_name);
   // Profile logo.
   if (file_exists($current_profile_path . '/images/' . $profile_name . '-logo.png')) {
-    $variables['profile_logo'] =  \Drupal::request()->getBaseUrl() . '/' . $current_profile_path . '/images/' . $profile_name . '-logo.png';
+    $variables['profile_logo'] = \Drupal::request()->getBaseUrl() . '/' . $current_profile_path . '/images/' . $profile_name . '-logo.png';
   }
 
   // Attach install page library.
