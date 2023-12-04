@@ -175,8 +175,5 @@ libraries-extend:
   media_library/widget:
     - claro/media_library.theme
 
-quickedit_stylesheets:
-  - ../../../core/themes/claro/css/components/quickedit.css
-
 ckeditor_stylesheets: false
 ckeditor5-stylesheets: false
