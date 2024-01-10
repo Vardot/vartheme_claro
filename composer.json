@@ -39,7 +39,9 @@
         "Issue #3325263: Fix user.data ServiceNotFoundException when using Gin as distribution installer theme":
         "https://www.drupal.org/files/issues/2023-10-22/3325263-24.patch",
         "Issue #3398040: Fix issue with changing between responsive views and Gin Toolbar over menus":
-        "https://www.drupal.org/files/issues/2023-10-31/3398040-8.patch"
+        "https://www.drupal.org/files/issues/2023-10-31/3398040-8.patch",
+        "Issue #3410516: Fix no longer rendered region Header/Local tasks  since 3.0.0-rc8":
+        "https://www.drupal.org/files/issues/2024-01-10/gin--2024-01-10--3410516-12--mr-352--56d7ad49.patch"
       }
     }
   }
