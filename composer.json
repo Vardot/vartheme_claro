@@ -27,7 +27,7 @@
     "oomphinc/composer-installers-extender": "~2",
     "cweagans/composer-patches": "~1",
     "drupal/core": "~9.5.0 || ~10",
-    "drupal/gin": "3.0.0-rc8",
+    "drupal/gin": "3.0.0-rc9",
     "drupal/gin_toolbar": "~1",
     "drupal/gin_moderation_sidebar": "~1"
   },
@@ -36,12 +36,8 @@
     "composer-exit-on-patch-failure": true,
     "patches": {
       "drupal/gin": {
-        "Issue #3325263: Fix user.data ServiceNotFoundException when using Gin as distribution installer theme":
-        "https://www.drupal.org/files/issues/2023-10-22/3325263-24.patch",
         "Issue #3398040: Fix issue with changing between responsive views and Gin Toolbar over menus":
-        "https://www.drupal.org/files/issues/2023-10-31/3398040-8.patch",
-        "Issue #3413673: Fix Gin 3.0.0-rc8 issue of no longer rendered Primary tabs, or the Secondary tabs are not shown out in number of cases in the header or pre-content region":
-        "https://www.drupal.org/files/issues/2024-01-10/gin--2023-12-20--3409899-8--mr-348--68ca5dfc.patch"
+        "https://www.drupal.org/files/issues/2023-10-31/3398040-8.patch"
       }
     }
   }
