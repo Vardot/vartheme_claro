@@ -4,7 +4,7 @@ base theme: gin
 description: "A modern administration theme for Varbase standard websites. Based on the Gin Admin Theme and Claro Drupal core admin theme."
 alt text: "Screenshot of Vartheme Claro, Varbase administration theme."
 core_version_requirement: ~9.5.0 || ~10
-package: "Varbase"
+package: Varbase - deprecated
 regions:
   header: 'Header'
   pre_content: 'Pre-content'
