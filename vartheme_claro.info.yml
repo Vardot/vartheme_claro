@@ -6,6 +6,7 @@ alt text: "Screenshot of Vartheme Claro, Varbase administration theme."
 core_version_requirement: ~9.5.0 || ~10
 package: Varbase (deprecated)
 lifecycle: deprecated
+lifecycle_link: 'https://www.drupal.org/project/vartheme_claro'
 regions:
   header: 'Header'
   pre_content: 'Pre-content'
