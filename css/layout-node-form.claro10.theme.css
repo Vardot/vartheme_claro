@@ -1,17 +1,17 @@
 @media screen and (min-width: 61rem) {
-  .layout-region--node-main {
+  .layout-region--main {
     width: 100%;
   }
-  .layout-region--node-main .layout-region__content {
+  .layout-region--main .layout-region__content {
     max-width: 100%;
   }
-  .layout-region--node-footer {
+  .layout-region--footer {
     width: 100%;
   }
-  .layout-region--node-footer .layout-region__content {
+  .layout-region--footer .layout-region__content {
     max-width: 100%;
   }
-  .layout-region--node-secondary {
+  .layout-region--secondary {
     width: 100%;
   }
 }
