@@ -151,3 +151,10 @@ fieldset.fieldset {
     flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 77em) {
+  /* Change the width for the modal and widget since there is less space. */
+  .layout-region.layout-region--secondary .media-library-widget-modal .media-library-item--grid,
+  .layout-region.layout-region--secondary .media-library-selection .media-library-item--grid {
+    width: auto !important;
+  }
+}

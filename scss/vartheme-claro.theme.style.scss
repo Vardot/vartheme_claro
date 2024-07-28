@@ -197,3 +197,15 @@ td > .ajax-new-content > .form-item > .form-element {
     }
   }
 }
+
+@media screen and (min-width: 77em) {
+  /* Change the width for the modal and widget since there is less space. */
+  .layout-region.layout-region--secondary {
+    .media-library-widget-modal,
+    .media-library-selection {
+      .media-library-item--grid {
+        width: auto !important;
+      }
+    }
+  }
+}
