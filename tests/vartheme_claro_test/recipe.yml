@@ -1,0 +1,10 @@
+name: 'Vartheme Claro Test'
+description: 'Provisions a Standard site with Vartheme Claro as the administration theme for the automated functional tests. Core Claro stays as the base theme.'
+type: 'Testing'
+install:
+  - vartheme_claro
+config:
+  actions:
+    system.theme:
+      simpleConfigUpdate:
+        admin: vartheme_claro
