@@ -1,3 +1,7 @@
+[![pipeline status](https://git.drupalcode.org/project/vartheme_claro/badges/3.1.x/pipeline.svg)](https://git.drupalcode.org/project/vartheme_claro/-/pipelines)
+[![Vartheme Claro](https://img.shields.io/badge/Vartheme%20Claro-3.1.0-0d6efc?labelColor=001d38&style=flat-square)](https://git.drupalcode.org/project/vartheme_claro/-/pipelines?ref=3.1.0)
+[![Automated Functional Testing](https://git.drupalcode.org/project/vartheme_claro/badges/3.1.x/pipeline.svg)](https://git.drupalcode.org/project/vartheme_claro/-/pipelines)
+
 # Vartheme Claro
 ---
 
