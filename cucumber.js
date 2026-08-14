@@ -1,12 +1,12 @@
 // Cucumber-js config for the Vartheme Claro automated functional testing suite.
 //
-// Automated functional testing powered by webship-js (Playwright + Cucumber-js).
+// Automated functional testing powered by varbase-e2e (Playwright + Cucumber-js).
 // Runs the Drupal Standard profile admin-theme feature set under
 // tests/features/drupal/, with Vartheme Claro set as the administration theme.
 //
 //   npx cucumber-js --config cucumber.js
 //
-// Reusable step definitions ship with webship-js; the theme-specific steps live
+// Reusable step definitions ship with varbase-e2e; the theme-specific steps live
 // in tests/step-definitions/vartheme_claro.steps.js. Every worldParameter
 // (users, selectors, screenshot, video, javascript, minWaitTime, launchUrl) is
 // inlined below - this single file is the whole configuration. Artefacts land
@@ -17,7 +17,7 @@ module.exports = {
     timeout: 120000,
     requireModule: ['tsx/cjs'],
     require: [
-      'node_modules/webship-js/tests/step-definitions/**/*.js',
+      'node_modules/@vardot/varbase-e2e/tests/step-definitions/**/*.js',
       'tests/step-definitions/**/*.js',
     ],
     paths: ['tests/features/drupal/**/*.feature'],
@@ -80,13 +80,13 @@ module.exports = {
         infoTypes: '',
       },
       video: {
-        mode: process.env.WEBSHIP_VIDEO || 'on-failure',
+        mode: process.env.VARBASE_E2E_VIDEO || 'on-failure',
         dir: './tests/videos',
         size: { width: 1920, height: 1080 },
         filenamePattern: '{datetime}.{feature_file}.{scenario}.{status}.{ext}',
       },
       javascript: {
-        mode: process.env.WEBSHIP_JS_ERROR_MODE || 'warn',
+        mode: process.env.VARBASE_E2E_JS_ERROR_MODE || 'warn',
         levels: ['error'],
         ignore: '',
         beforeScenario: false,

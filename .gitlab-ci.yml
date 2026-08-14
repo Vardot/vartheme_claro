@@ -5,7 +5,7 @@
 #   1. The standard Drupal CI validation jobs (composer-lint, cspell, eslint,
 #      phpcs, phpstan, phpunit) provided by the drupalci templates, on
 #      Drupal ~11.3.
-#   2. An automated functional testing job (webship-js = Playwright +
+#   2. An automated functional testing job (varbase-e2e = Playwright +
 #      Cucumber-js) that runs the tests/features/drupal/** suite against a
 #      freshly installed Drupal Standard site. Vartheme Claro is installed and
 #      set as the administration theme (the tests/vartheme_claro_test recipe
@@ -66,16 +66,16 @@ phpunit:
     - apt-get install -y nodejs
     - node --version && npm --version
     - 'test -f .yarnrc.yml || echo "nodeLinker: node-modules" > .yarnrc.yml'
-    # Back up cucumber.js - webship-js's postinstall can clobber it under yarn 4.
+    # Back up cucumber.js - varbase-e2e's postinstall can clobber it under yarn 4.
     - cp cucumber.js .cucumber.js.bak
     - corepack enable
     - yarn install
     - cp .cucumber.js.bak cucumber.js && rm .cucumber.js.bak
     - ./node_modules/.bin/playwright install --with-deps chromium
 
-# = Automated functional testing (webship-js) - Drupal Standard profile =
+# = Automated functional testing (varbase-e2e) - Drupal Standard profile =
 # Vartheme Claro is installed and set as the administration theme.
-webship-js-test:
+varbase-e2e-test:
   extends: .testing-job-base
   needs: [composer]
   # Only the database service is needed. Playwright bundles its own Chromium,
@@ -102,14 +102,20 @@ webship-js-test:
     # Core Claro stays as the base theme.
     - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT theme:install vartheme_claro -y
     - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT config:set system.theme admin vartheme_claro -y
+    # Drupal 11.4's standard profile no longer ships the article/page content
+    # types, so /node/add renders an empty list and the "add content page"
+    # scenario cannot assert a type. Provision Article explicitly - the suite
+    # self-provisions what it asserts instead of relying on what core installs.
+    - |
+      $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT php:eval 'if (!\Drupal::entityTypeManager()->getStorage("node_type")->load("article")) { \Drupal\node\Entity\NodeType::create(["type" => "article", "name" => "Article"])->save(); }'
     - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT cache:rebuild
     - !reference [.fragments, node_playwright]
   script:
-    # cucumber.js loads only tests/features/drupal/**. Disable webship-js's auto
+    # cucumber.js loads only tests/features/drupal/**. Disable varbase-e2e's auto
     # HTML hook and run generate-reports explicitly so HTML + PDF land next to
     # the JSON in tests/reports/.
     - WEBSHIP_REPORT_DISABLE=1 ./node_modules/.bin/cucumber-js --config cucumber.js --tags "not @wip"
-    - node ./node_modules/webship-js/bin/generate-reports.js
+    - node ./node_modules/@vardot/varbase-e2e/bin/generate-reports.js
         --json tests/reports/cucumber_report.json
         --out  tests/reports/cucumber_report.html
         --format all
