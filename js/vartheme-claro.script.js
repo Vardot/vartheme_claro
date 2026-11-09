@@ -5,8 +5,8 @@
 
 (function ($, _, Drupal) {
   Drupal.behaviors.varthemeClaro = {
-    attach: function () {
+    attach() {
       // Vartheme Claro admin JavaScript behaviors goes here.
-    }
+    },
   };
 })(window.jQuery, window._, window.Drupal);
