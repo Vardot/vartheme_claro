@@ -21,5 +21,13 @@
     "drupal/gin": "@stable",
     "drupal/gin_toolbar": "@stable",
     "drupal/gin_moderation_sidebar": "@stable"
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "oomphinc/composer-installers-extender": true,
+      "cweagans/composer-patches": true,
+      "vardot/varbase-patches": true
+    }
   }
 }

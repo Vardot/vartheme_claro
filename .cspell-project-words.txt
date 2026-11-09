@@ -1,0 +1,7 @@
+blockvarbase
+darkmode
+socialauthlogin
+tajawal
+varbase
+vardot
+yoast
