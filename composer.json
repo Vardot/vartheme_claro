@@ -16,6 +16,6 @@
         "source": "http://cgit.drupalcode.org/vartheme_claro"
     },
     "require": {
-        "drupal/core": "^10.6 || ^11"
+        "drupal/core": "^10.6 || ^11.4 || ^12.0"
     }
 }
